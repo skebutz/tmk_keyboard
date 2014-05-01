@@ -126,11 +126,11 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctl|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
      * `-------------------------------------------------------------------'
      */
-    KEYMAP(KC_PWR,  KC_F1,  KC_F2,  KC_F3,    KC_F4,KC_F5,KC_F6,KC_F7,  KC_F8,  KC_F9, KC_F10,KC_F11, KC_F12,KC_PSCR,KC_PAUS,KC_NLCK,KC_SLCK, \
-               NO,     NO,     NO,     NO,       NO,   NO,   NO,   NO,     NO,KC_MS_U,KC_BTN2,KC_GRV,KC_NUBS,     NO,     NO,     NO,     NO, \
-          KC_CAPS,KC_VOLD,KC_VOLU,KC_MUTE,       NO,   NO,   NO,   NO,KC_MS_L,KC_MS_D,KC_MS_R,    NO,     NO,     NO,     NO,     NO,     NO, \
-          KC_LSFT,     NO,     NO,     NO,       NO,   NO,   NO,   NO,KC_BTN1,KC_WH_D,KC_WH_U,    NO,     NO,     NO,     NO,     NO,     NO, \
-               NO,KC_LALT,     NO,     NO,KC_DELETE,   NO,   NO,   NO,     NO,     NO,     NO,    NO,     NO,     NO,     NO,     NO,     NO), 
+    KEYMAP(PWR,  F1,  F2,  F3,    F4,F5,F6,F7,  F8,  F9, F10,F11, F12,PSCR,PAUS,NLCK,SLCK, \
+            NO,  NO,  NO,  NO,    NO,NO,NO,NO,  NO,MS_U,BTN2,GRV,NUBS,  NO,  NO,  NO,  NO, \
+          CAPS,VOLD,VOLU,MUTE,    NO,NO,NO,NO,MS_L,MS_D,MS_R, NO,  NO,  NO,  NO,  NO,  NO, \
+          LSFT,  NO,  NO,  NO,    NO,NO,NO,NO,BTN1,WH_D,WH_U, NO,  NO,  NO,  NO,  NO,  NO, \
+            NO,LALT,  NO,  NO,DELETE,NO,NO,NO,  NO,  NO,  NO, NO,  NO,  NO,  NO,  NO,  NO), 
 
 };
 
