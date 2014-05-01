@@ -35,13 +35,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     K10, K11, K12, K13, K14, K15, K16, K17, K18, K19, K1A, K1B, K1C, K1D, K1E, K1F, K1G, \
     K20, K21, K22, K23, K24, K25, K26, K27, K28, K29, K2A, K2B, K2C, K2D, K2E, K2F, K2G, \
     K30, K31, K32, K33, K34, K35, K36, K37, K38, K39, K3A, K3B, K3C, K3D, K3E, K3F, K3G, \
-    K40, K41, K42, K43, K44, K45, K46, K47, K48, K49, K4A, K4B, K4C, K4D, K4E, K4F, K4G \
+    K40, K41, K42, K43, K44, K45, K46, K47, K48, K49, K4A, K4B, K4C, K4D, K4E, K4F, K4G  \
 ) { \
     { KC_##K00, KC_##K01, KC_##K02, KC_##K03, KC_##K04, KC_##K05, KC_##K06, KC_##K07, KC_##K08, KC_##K09, KC_##K0A, KC_##K0B, KC_##K0C, KC_##K0D, KC_##K0E, KC_##K0F, KC_##K0G }, \
     { KC_##K10, KC_##K11, KC_##K12, KC_##K13, KC_##K14, KC_##K15, KC_##K16, KC_##K17, KC_##K18, KC_##K19, KC_##K1A, KC_##K1B, KC_##K1C, KC_##K1D, KC_##K1E, KC_##K1F, KC_##K1G }, \
     { KC_##K20, KC_##K21, KC_##K22, KC_##K23, KC_##K24, KC_##K25, KC_##K26, KC_##K27, KC_##K28, KC_##K29, KC_##K2A, KC_##K2B, KC_##K2C, KC_##K2D, KC_##K2E, KC_##K2F, KC_##K2G }, \
     { KC_##K30, KC_##K31, KC_##K32, KC_##K33, KC_##K34, KC_##K35, KC_##K36, KC_##K37, KC_##K38, KC_##K39, KC_##K3A, KC_##K3B, KC_##K3C, KC_##K3D, KC_##K3E, KC_##K3F, KC_##K3G }, \
-    { KC_##K40, KC_##K41, KC_##K42, KC_##K43, KC_##K44, KC_##K45, KC_##K46, KC_##K47, KC_##K48, KC_##K49, KC_##K4A, KC_##K4B, KC_##K4C, KC_##K4D, KC_##K4E, KC_##K4F, KC_##K4G } \
+    { KC_##K40, KC_##K41, KC_##K42, KC_##K43, KC_##K44, KC_##K45, KC_##K46, KC_##K47, KC_##K48, KC_##K49, KC_##K4A, KC_##K4B, KC_##K4C, KC_##K4D, KC_##K4E, KC_##K4F, KC_##K4G }  \
 }
 
 #define KEYCODE(layer, row, col) (pgm_read_byte(&keymaps[(layer)][(row)][(col)]))
@@ -86,9 +86,9 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctl|Alt|Cat|Key|Bsp|Spa|  ,|  .|Ent|Alt|Ctl| Lt| Rt|NEn| N0| N,| N+|
      * `-------------------------------------------------------------------'
      */
-    KEYMAP(KC_ESC,   KC_1,   KC_2,   KC_3,   KC_4,   KC_5,   KC_6,   KC_7,   KC_8,   KC_9,   KC_0,KC_MINS,KC_DELETE,KC_HOME, KC_END,KC_PGDN,KC_PGUP, \
-           KC_TAB,   KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,   KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,KC_BSLS,  KC_RBRC,  KC_P7,  KC_P8,  KC_P9,KC_PSLS, \
-           KC_NO,   KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,KC_SCLN,  KC_NO,  KC_SLSH,  KC_P4,  KC_P5,  KC_P6,KC_PAST,  \
+    KEYMAP(KC_ESC,   KC_1,   KC_2,   KC_3,   KC_4,   KC_5,   KC_6,   KC_7,   KC_8,   KC_9,   KC_0,KC_MINS,KC_DELETE,KC_HOME, KC_END,KC_PGDN,KC_PGUP,  \
+           KC_TAB,   KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,   KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,KC_BSLS,  KC_RBRC,  KC_P7,  KC_P8,  KC_P9,KC_PSLS,  \
+           KC_NO,   KC_A,   KC_S,   KC_D,   KC_F,   KC_G,   KC_H,   KC_J,   KC_K,   KC_L,KC_SCLN,  KC_NO,  KC_SLSH,  KC_P4,  KC_P5,  KC_P6,KC_PAST,   \
            KC_LSFT,   KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   KC_N,   KC_M,KC_QUOT,KC_LBRC,KC_RSFT,KC_DOWN,    KC_UP,  KC_P1,  KC_P2,  KC_P3,KC_PMNS, \
            KC_LCTL,KC_RALT, KC_FN1, KC_ENT,KC_BSPC, KC_SPC,KC_COMM, KC_DOT, KC_FN2,KC_RALT,KC_RCTL,KC_LEFT,  KC_RGHT,KC_PENT,  KC_P0,KC_PDOT,KC_PPLS),
 
@@ -106,11 +106,12 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctl|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
      * `-------------------------------------------------------------------'
      */
-    KEYMAP(PWR,  F1,  F2,  F3,    F4,F5,F6,F7,  F8,  F9, F10,F11, F12,PSCR,PAUS,NLCK,SLCK, \
-           NO,  NO,  NO,  NO,    NO,NO,NO,NO,  NO,MS_U,BTN2,GRV,NUBS,  NO,  NO,  NO,   NO, \
-           CAPS,VOLD,VOLU,MUTE,    NO,NO,NO,NO,MS_L,MS_D,MS_R, NO,  NO,  NO,  NO,  NO, NO, \
-           LSFT,  NO,  NO,  NO,    NO,NO,NO,NO,BTN1,WH_D,WH_U, NO,  NO,  NO,  NO,  NO, NO, \
-           NO,LALT,  NO,  NO,DELETE,NO,NO,NO,  NO,  NO,  NO, NO,  NO,  NO,  NO,  NO,  NO), 
+    KEYMAP(PWR, F1,  F2,  F3,  F4,    F5,F6,F7,F8,  F9,  F10, F11,F12, PSCR,PAUS,NLCK,SLCK, \
+           NO,  NO,  NO,  NO,  NO,    NO,NO,NO,NO,  MS_U,BTN2,GRV,NUBS,NO,  NO,  NO,  NO, \
+           CAPS,VOLD,VOLU,MUTE,NO,    NO,NO,NO,MS_L,MS_D,MS_R,NO, NO,  NO,  NO,  NO,  NO, \
+           LSFT,NO,  NO,  NO,  NO,    NO,NO,NO,BTN1,WH_D,WH_U,NO, NO,  NO,  NO,  NO,  NO, \
+           NO,  LALT,NO,  NO,  DELETE,NO,NO,NO,NO,  NO,  NO,  NO, NO,  NO,  NO,  NO,  NO), 
+
 
     /* Layer 2: Key layer
      * ,-------------------------------------------------------------------.
@@ -125,11 +126,11 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctl|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
      * `-------------------------------------------------------------------'
      */
-    KEYMAP(PWR,  F1,  F2,  F3,    F4,F5,F6,F7,  F8,  F9, F10,F11, F12,PSCR,PAUS,NLCK,SLCK, \
-           NO,  NO,  NO,  NO,    NO,NO,NO,NO,  NO,MS_U,BTN2,GRV,NUBS,  NO,  NO,  NO,   NO, \
-           CAPS,VOLD,VOLU,MUTE,    NO,NO,NO,NO,MS_L,MS_D,MS_R, NO,  NO,  NO,  NO,  NO, NO, \
-           LSFT,  NO,  NO,  NO,    NO,NO,NO,NO,BTN1,WH_D,WH_U, NO,  NO,  NO,  NO,  NO, NO, \
-           NO,LALT,  NO,  NO,DELETE,NO,NO,NO,  NO,  NO,  NO, NO,  NO,  NO,  NO,  NO,  NO), 
+    KEYMAP(PWR, F1,  F2,  F3,  F4,    F5,F6,F7,F8,  F9,  F10, F11,F12, PSCR,PAUS,NLCK,SLCK, \
+           NO,  NO,  NO,  NO,  NO,    NO,NO,NO,NO,  MS_U,BTN2,GRV,NUBS,NO,  NO,  NO,  NO, \
+           CAPS,VOLD,VOLU,MUTE,NO,    NO,NO,NO,MS_L,MS_D,MS_R,NO, NO,  NO,  NO,  NO,  NO, \
+           LSFT,NO,  NO,  NO,  NO,    NO,NO,NO,BTN1,WH_D,WH_U,NO, NO,  NO,  NO,  NO,  NO, \
+           NO,  LALT,NO,  NO,  DELETE,NO,NO,NO,NO,  NO,  NO,  NO, NO,  NO,  NO,  NO,  NO), 
 
 };
 
