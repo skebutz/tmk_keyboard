@@ -64,9 +64,9 @@ static const uint8_t PROGMEM fn_layer[] = {
 static const uint8_t PROGMEM fn_keycode[] = {
     KC_NO,          // Fn0
     KC_NO,          // Fn1
-    KC_NO,        // Fn2 ???
-    KC_NO,        // Fn3 ???
-    KC_NO,         // Fn4 ???
+    KC_NO,          // Fn2 ???
+    KC_NO,          // Fn3 ???
+    KC_NO,          // Fn4 ???
     KC_NO,          // Fn5
     KC_NO,          // Fn6
     KC_NO           // Fn7
@@ -77,20 +77,20 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * ,-------------------------------------------------------------------.
      * |Esc|  1|  2|  3|  4|  5|  6|  7|  8|  9|  0| + |Del|Hom|End|PgD|PgU|
      * |-------------------------------------------------------------------|
-     * |Tab|  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|   |   |   |   |   |   |
+     * |Tab|  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|'* |¨~^| N7| N8| N9| N/|
      * |-------------------------------------------------------------------|
-     * |Cap|  A|  S|  D|  F|  G|  H|  J|  K|  L|   |   |   |   |   |   |   |  
+     * |Cap|  A|  S|  D|  F|  G|  H|  J|  K|  L|  Ö|  !|  -| N4| N5| N6| N*|  
      * |-------------------------------------------------------------------|
-     * |Shi|  Z|  X|  C|  V|  B|  N|  M|   |   |   |   |   |   |   |   |   |
+     * |Shi|  Z|  X|  C|  V|  B|  N|  M|  Ä|  Å|Shi| Dn| Up| N1| N2| N3| N-|
      * |-------------------------------------------------------------------|
-     * |Ctl|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+     * |Ctl|Alt|Cat|Key|Bsp|Spa|  ,|  .|Ent|Alt|Ctl| Lt| Rt|NEn| N0| N,| N+|
      * `-------------------------------------------------------------------'
      */
-    KEYMAP(ESC, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, \
-           TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS, \
-           LCTL,A,   S,   D,   F,   G,   H,   J,   K,   L,   FN3, QUOT,ENT, \
-           LSFT,Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, FN2, RSFT,FN1, \
-           FN7, LGUI,LALT,FN4, RALT,GRV, FN6, FN6, RCTL),
+    KEYMAP(ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, \
+           TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS, \
+           LCTL,   A,   S,   D,   F,   G,   H,   J,   K,   L,   Ö,????,????, \
+           LSFT,   Z,   X,   C,   V,   B,   N,   M,   Ä,   Å,RSFT,DOWN,  UP,FN1, \
+           LCTL,LALT, FN1, Fn2,BSPC, SPC,COMM, DOT, ENT,LALT,RCTL,LEFT,RGHT
 
 
     /* Layer 1: Cat layer
