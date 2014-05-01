@@ -86,11 +86,11 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctl|Alt|Cat|Key|Bsp|Spa|  ,|  .|Ent|Alt|Ctl| Lt| Rt|NEn| N0| N,| N+|
      * `-------------------------------------------------------------------'
      */
-    KEYMAP(ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, \
-           TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS, \
-           LCTL,   A,   S,   D,   F,   G,   H,   J,   K,   L,   Ö,????,????, \
-           LSFT,   Z,   X,   C,   V,   B,   N,   M,   Ä,   Å,RSFT,DOWN,  UP,FN1, \
-           LCTL,LALT, FN1, Fn2,BSPC, SPC,COMM, DOT, ENT,LALT,RCTL,LEFT,RGHT
+    KEYMAP(ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS,DELETE,HOME, END,PGDN, PGUP, \
+           TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,BSLS,  RBRC,  P7,  P8,  P9,PSLS, \
+            NO,    A,   S,   D,   F,   G,   H,   J,   K,   L,   Ö,????,  SLSH,  P4,  P5,  P6,PAST, \
+           LSFT,   Z,   X,   C,   V,   B,   N,   M,   Ä,   Å,RSFT,DOWN,    UP,  P1,  P2,  P3,PMNS, \
+           LCTL,RALT, FN1, ENT,BSPC, SPC,COMM, DOT, FN2,RALT,RCTL,LEFT,  RGHT,PENT,  P0,PDOT,PPLS),
 
 
     /* Layer 1: Cat layer
@@ -106,11 +106,11 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctl|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
      * `-------------------------------------------------------------------'
      */
-    KEYMAP(PWR, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, DEL, \
-           CAPS,NO,  NO,  NO,  NO,  NO,  NO,  NO,  PSCR,SLCK,BRK, UP,  INS, NLCK,\
-           LCTL,VOLD,VOLU,MUTE,NO,  NO,  PAST,PSLS,HOME,PGUP,LEFT,RGHT,ENT, \
-           LSFT,NO,  NO,  NO,  NO,  NO,  PPLS,PMNS,END, PGDN,DOWN,RSFT,FN1, \
-           NO,  LGUI,LALT,SPC, RALT,NO,  NO,  NO,  RCTL),
+    KEYMAP( PWR,  F1,  F2,  F3,    F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,PSCR,PAUS,NLCK,SLCK, \
+             NO,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
+           CAPS,VOLD,VOLU,MUTE,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
+           LSFT,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
+             NO,LALT,  NO,  NO,DELETE,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO), 
 
 
     /* Layer 2: Key layer
@@ -126,11 +126,12 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctl|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
      * `-------------------------------------------------------------------'
      */
-    KEYMAP(GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, GRV, \
-           BSLS,HOME,PGDN,UP,  PGUP,END, HOME,PGDN,PGUP,END, NO,  NO,  NO,  NO,  \
-           LCTL,NO,  LEFT,DOWN,RGHT,NO,  LEFT,DOWN,UP,  RGHT,NO,  NO,  BSLS, \
-           LSFT,NO,  NO,  NO,  NO,  NO,  HOME,PGDN,PGUP,END, FN2, RSFT,NO, \
-           NO,  LGUI,LALT,SPC, RALT,RGUI,FN6, FN6, RCTL),
+    KEYMAP( PWR,  F1,  F2,  F3,    F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,PSCR,PAUS,NLCK,SLCK, \
+             NO,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
+           CAPS,VOLD,VOLU,MUTE,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
+           LSFT,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
+             NO,LALT,  NO,  NO,DELETE,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO), 
+
 
 
     /* Layer 3: Mouse mode (Semicolon)
