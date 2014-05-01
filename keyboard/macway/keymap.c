@@ -88,8 +88,8 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      */
     KEYMAP(ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS,DELETE,HOME, END,PGDN, PGUP, \
            TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,BSLS,  RBRC,  P7,  P8,  P9,PSLS, \
-            NO,    A,   S,   D,   F,   G,   H,   J,   K,   L,   Ö,????,  SLSH,  P4,  P5,  P6,PAST, \
-           LSFT,   Z,   X,   C,   V,   B,   N,   M,   Ä,   Å,RSFT,DOWN,    UP,  P1,  P2,  P3,PMNS, \
+            NO,    A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,????,  SLSH,  P4,  P5,  P6,PAST, \
+           LSFT,   Z,   X,   C,   V,   B,   N,   M,QUOT,LBRC,RSFT,DOWN,    UP,  P1,  P2,  P3,PMNS, \
            LCTL,RALT, FN1, ENT,BSPC, SPC,COMM, DOT, FN2,RALT,RCTL,LEFT,  RGHT,PENT,  P0,PDOT,PPLS),
 
 
@@ -107,9 +107,9 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * `-------------------------------------------------------------------'
      */
     KEYMAP( PWR,  F1,  F2,  F3,    F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,PSCR,PAUS,NLCK,SLCK, \
-             NO,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
-           CAPS,VOLD,VOLU,MUTE,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
-           LSFT,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
+             NO,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,MS_U,BTN2, GRV,NUBS,  NO,  NO,  NO,  NO, \
+           CAPS,VOLD,VOLU,MUTE,    NO,  NO,  NO,  NO,MS_L,MS_D,MS_R,  NO,  NO,  NO,  NO,  NO,  NO, \
+           LSFT,  NO,  NO,  NO,    NO,  NO,  NO,  NO,BTN1,WH_D,WH_U,  NO,  NO,  NO,  NO,  NO,  NO, \
              NO,LALT,  NO,  NO,DELETE,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO), 
 
 
@@ -126,53 +126,11 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctl|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
      * `-------------------------------------------------------------------'
      */
-    KEYMAP( PWR,  F1,  F2,  F3,    F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,PSCR,PAUS,NLCK,SLCK, \
-             NO,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
+    KEYMAP( PWR,  F1,  F2,  F3,    F4,  F5,  F6,  F7,  F8,  F9, F10, F11, INT,PSCR,PAUS,NLCK,SLCK, \
+             NO,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,  NO,  NO, GRV,NUBS,  NO,  NO,  NO,  NO, \
            CAPS,VOLD,VOLU,MUTE,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
            LSFT,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
-             NO,LALT,  NO,  NO,DELETE,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO), 
-
-
-
-    /* Layer 3: Mouse mode (Semicolon)
-     * ,-----------------------------------------------------------.
-     * |  `| F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|   `   |
-     * |-----------------------------------------------------------|
-     * |  \  |MwL|MwD|McU|MwU|MwR|MwL|MwD|MwU|MwR|   |   |   |     |
-     * |-----------------------------------------------------'     |
-     * |Contro|   |McL|McD|McR|   |McL|McD|McU|McR|xxx|   |   \    |
-     * |-----------------------------------------------------------|
-     * |Shift   |   |   |Mb1|Mb2|Mb3|Mb2|Mb1|   |   |   |Shift |   |
-     * |-----------------------------------------------------------|
-     * |xxx|Gui |Alt  |Mb1                   |Alt  |   |   |   |   |
-     * `-----------------------------------------------------------'
-     * Mc: Mouse Cursor / Mb: Mouse Button / Mw: Mouse Wheel 
-     */
-    KEYMAP(GRV, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, GRV, \
-           BSLS,WH_L,WH_D,MS_U,WH_U,WH_R,WH_L,WH_D,WH_U,WH_R,NO,  NO,  NO,  NO,  \
-           LCTL,NO,  MS_L,MS_D,MS_R,NO,  MS_L,MS_D,MS_U,MS_R,FN3, NO,  BSLS, \
-           LSFT,NO,  NO,  BTN1,BTN2,BTN3,BTN2,BTN1,NO,  NO,  NO,  RSFT,NO, \
-           FN7, LGUI,LALT,BTN1,RALT,NO,  FN6, FN6, NO),
-
-
-    /* Layer 4: Matias half keyboard style (Space)
-     * ,-----------------------------------------------------------.
-     * |Esc| F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|Delete |
-     * |-----------------------------------------------------------|
-     * |Backs|  P|  O|  I|  U|  Y|  T|  R|  E|  W|  Q|Tab|Tab|     |
-     * |-----------------------------------------------------'     |
-     * |Contro|  ;|  L|  K|  J|  H|  G|  F|  D|  S|  A|Con|Control |
-     * |-----------------------------------------------------------|
-     * |Shift   |  /|  .|  ,|  M|  N|  B|  V|  C|  X|  Z|Shift |   |
-     * |-----------------------------------------------------------|
-     * |   |Gui |Alt  |xxxxxxxxxxxxxxxxxxxxxx|Alt  |Gui|   |   |Ctr|
-     * `-----------------------------------------------------------'
-     */
-    KEYMAP(MINS,0,   9,   8,   7,   6,   5,   4,   3,   2,   1,   NO,  NO,  ESC, \
-           BSPC,P,   O,   I,   U,   Y,   T,   R,   E,   W,   Q,   TAB, TAB, TAB, \
-           LCTL,SCLN,L,   K,   J,   H,   G,   F,   D,   S,   A,   RCTL,RCTL, \
-           LSFT,SLSH,DOT, COMM,M,   N,   B,   V,   C,   X,   Z,   RSFT,NO, \
-           NO,  LGUI,LALT,FN4, RALT,RGUI,NO,  NO,  RCTL),
+             NO,LALT,LGUI,  NO,DELETE,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO), 
 };
 
 
