@@ -86,7 +86,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctl|Alt|Cat|Key|Bsp|Spa|  ,|  .|Ent|Alt|Ctl| Lt| Rt|NEn| N0| N,| N+|
      * `-------------------------------------------------------------------'
      */
-    KEYMAP(ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS,DELETE,HOME, END,PGDN, PGUP, \
+    KEYMAP(KC_ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,KC_MINS,KC_DELETE,KC_HOME, KC_END,KC_PGDN, KC_PGUP, \
            TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,BSLS,  RBRC,  P7,  P8,  P9,PSLS, \
             NO,    A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,  NO,  SLSH,  P4,  P5,  P6,PAST, \
            LSFT,   Z,   X,   C,   V,   B,   N,   M,QUOT,LBRC,RSFT,DOWN,    UP,  P1,  P2,  P3,PMNS, \
@@ -106,7 +106,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctl|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
      * `-------------------------------------------------------------------'
      */
-    KEYMAP( PWR,  F1,  F2,  F3,    F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,PSCR,PAUS,NLCK,SLCK, \
+    KEYMAP(PWR,  F1,  F2,  F3,    F4,  F5,  F6,  F7,  F8,  F9, F10, F11, F12,PSCR,PAUS,NLCK,SLCK, \
              NO,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,MS_U,BTN2, GRV,NUBS,  NO,  NO,  NO,  NO, \
            CAPS,VOLD,VOLU,MUTE,    NO,  NO,  NO,  NO,MS_L,MS_D,MS_R,  NO,  NO,  NO,  NO,  NO,  NO, \
            LSFT,  NO,  NO,  NO,    NO,  NO,  NO,  NO,BTN1,WH_D,WH_U,  NO,  NO,  NO,  NO,  NO,  NO, \
@@ -126,7 +126,7 @@ static const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |Ctl|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
      * `-------------------------------------------------------------------'
      */
-    KEYMAP( PWR,  F1,  F2,  F3,    F4,  F5,  F6,  F7,  F8,  F9, F10, F11, INT,PSCR,PAUS,NLCK,SLCK, \
+    KEYMAP(PWR,  F1,  F2,  F3,    F4,  F5,  F6,  F7,  F8,  F9, F10, F11, INT,PSCR,PAUS,NLCK,SLCK, \
              NO,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,  NO,  NO, GRV,NUBS,  NO,  NO,  NO,  NO, \
            CAPS,VOLD,VOLU,MUTE,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
            LSFT,  NO,  NO,  NO,    NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO, \
