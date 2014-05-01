@@ -192,7 +192,7 @@ static void select_row(uint8_t row)
 {
     // Output low(DDR:1, PORT:0) to select
     // row: 0    1    2    3    4    
-    // pin: PB0, PB1, PB2, PB3, PPB7
+    // pin: PB0, PB1, PB2, PB3, PB7
     switch (row) {
         case 0:
             DDRB  |= (1<<0);
