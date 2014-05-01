@@ -30,8 +30,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     t.m.k. keyboard firmware for Macway mod
 
 /* matrix size */
-#define MATRIX_ROWS 9
-#define MATRIX_COLS 8
+#define MATRIX_ROWS 5
+#define MATRIX_COLS 17
 
 /* define if matrix has ghost */
 #define MATRIX_HAS_GHOST
