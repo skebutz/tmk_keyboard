@@ -13,14 +13,14 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            NO,  NO,  NO,  NO,  NO,  NO,  NO,  ACL2,  NO,  MS_U,BTN2,GRV, NUBS,NO,  NO,  NO,  NO, \
            CAPS,VOLD,VOLU,MUTE,NO,  NO,  NO,  ACL1,  MS_L,MS_D,MS_R,NO,  NO,  NO,  NO,  NO,  NO, \
            LSFT,NO,  NO,  NO,  NO,  NO,  NO,  ACL0,  BTN1,WH_D,WH_U,NO,  NO,  NO,  NO,  NO,  NO, \
-           NO,  LALT,NO,  NO,  DEL, NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO),
+           NO,  LALT,FN0,  NO,  DEL, NO,  NO,  NO,  FN1,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO),
            
     /* 2: Key */       
     KEYMAP(PWR, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, INS, PSCR,PAUS,NLCK,SLCK, \
            NO,  NO,  NO,  NO,  NO,  NO,  NO,  ACL2,  NO,  MS_U,BTN2,GRV, NUBS,NO,  NO,  NO,  NO, \
            CAPS,VOLD,VOLU,MUTE,NO,  NO,  NO,  ACL1,  MS_L,MS_D,MS_R,NO,  NO,  NO,  NO,  NO,  NO, \
            LSFT,NO,  NO,  NO,  NO,  NO,  NO,  ACL0,  BTN1,WH_D,WH_U,,  NO,  NO,  NO,  NO,  NO, \
-           NO,  LALT,NO,  NO,  DEL, NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO),
+           NO,  LALT,FN0,  NO,  DEL, NO,  NO,  NO,  FN1,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO),
 };
 const uint16_t PROGMEM fn_actions[] = {
   [0] = ACTION_LAYER_MOMENTARY(1),
