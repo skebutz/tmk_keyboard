@@ -4,7 +4,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* 0: qwerty */
     KEYMAP(ESC,    1,   2,   3,   4,   5,   6,   7,   8,   9,   0,MINS,DELETE,HOME, END,PGDN,PGUP, \
            TAB,    Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,BSLS,  RBRC,  P7,  P8,  P9,PSLS, \
-           NO,     A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN,ACTION_MODS_KEY(MOD_LSFT, KC_1),  SLSH,  P4,  P5,  P6,PAST, \
+           NO,     A,   S,   D,   F,   G,   H,   J,   K,   L,SCLN, NO,  SLSH,  P4,  P5,  P6,PAST, \
            LSFT,   Z,   X,   C,   V,   B,   N,   M,QUOT,LBRC,RSFT,DOWN,    UP,  P1,  P2,  P3,PMNS, \
            LCTL,RALT, FN0, ENT,BSPC, SPC,COMM, DOT, FN1,RALT,RCTL,LEFT,  RGHT,PENT,  P0,PDOT,PPLS),
            
