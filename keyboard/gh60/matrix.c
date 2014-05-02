@@ -117,7 +117,7 @@ matrix_row_t matrix_get_row(uint8_t row)
 
 void matrix_print(void)
 {
-    print("\nr/c 0123456789ABCDEF\n");
+    print("\nr/c 0123456789ABCDEFG\n");
     for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
         phex(row); print(": ");
         pbin_reverse16(matrix_get_row(row));
@@ -172,7 +172,7 @@ static matrix_row_t read_cols(void)
            (PINB&(1<<5) ? 0 : (1<<13)) |
            (PINB&(1<<4) ? 0 : (1<<14)) |
            (PIND&(1<<7) ? 0 : (1<<15)) |
-           (PIND&(1<<4) ? 0 : (1<<16));
+           (PIND&(1<<4) ? 0 : (1UL<<16));
 }
 
 /* Row pin configuration
