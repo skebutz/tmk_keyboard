@@ -120,7 +120,7 @@ void matrix_print(void)
     print("\nr/c 0123456789ABCDEFG\n");
     for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
         phex(row); print(": ");
-        pbin_reverse16(matrix_get_row(row));
+        pbin_reverse17(matrix_get_row(row));
         print("\n");
     }
 }
