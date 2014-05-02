@@ -16,7 +16,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            NO,  LALT,NO,  NO,  DEL, NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO),
            
     /* Key */       
-    KEYMAP(PWR, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, INT, PSCR,PAUS,NLCK,SLCK, \
+    KEYMAP(PWR, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, INS, PSCR,PAUS,NLCK,SLCK, \
            NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  MS_U,BTN2,GRV, NUBS,NO,  NO,  NO,  NO, \
            CAPS,VOLD,VOLU,MUTE,NO,  NO,  NO,  NO,  MS_L,MS_D,MS_R,NO,  NO,  NO,  NO,  NO,  NO, \
            LSFT,NO,  NO,  NO,  NO,  NO,  NO,  NO,  BTN1,WH_D,WH_U,NO,  NO,  NO,  NO,  NO,  NO, \
