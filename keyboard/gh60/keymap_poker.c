@@ -22,7 +22,6 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            LSFT,NO,  NO,  NO,  NO,  NO,  NO,  NO,  BTN1,WH_D,WH_U,NO,  NO,  NO,  NO,  NO,  NO, \
            NO,  LALT,NO,  NO,  DEL, NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO,  NO),
 };
-
 const uint16_t PROGMEM fn_actions[] = {
   [0] = ACTION_LAYER_MOMENTARY(1),
   [1] = ACTION_LAYER_MOMENTARY(2),
