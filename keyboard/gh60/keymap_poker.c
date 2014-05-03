@@ -29,10 +29,11 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            LSFT,  NO,  NO,  NO,  NO,  NO,  NO,ACL0,BTN1,WH_D,WH_U,  NO,    NO,  NO,  NO,  NO,  NO, \
            LCTL,LALT, FN0,  NO, DEL,  NO,  FN2,FN3, FN1,RALT,  NO,  NO,    NO, FN4,  NO,  NO,  NO),
 };
+
 const uint16_t PROGMEM fn_actions[] = {
     ACTION_LAYER_MOMENTARY(1),
     ACTION_LAYER_TAP(2, KC_ENT),
     ACTION_MODS_KEY(MOD_LSFT, KC_1),
     ACTION_MODS_KEY(MOD_LSFT, KC_MINS),
-    ACTION_LAYER_MOMENTARY(3, KC_PENT),
+    ACTION_LAYER_TAP(3, KC_PENT),
 };
